@@ -1,0 +1,382 @@
+/* Work sans font link  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800;900&display=swap');
+
+/* Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Common Styles  */
+.primary-btn {
+    border-radius: 8px;
+    background: #FF900E;
+    height: 3.5rem;
+    width: 10rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.section-description {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #131313;
+    font-weight: 700;
+}
+
+main, footer {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 6rem;
+}
+
+/* Header Section  */
+.header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 2rem 8.5rem 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #424242;
+}
+
+/* Banner Styles  */
+.banner {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.banner-title {
+    font-size: 3.8rem;
+    color: #131313;
+    font-weight: 700;
+    margin-bottom: .9rem;
+}
+
+.banner-image {
+    padding-top: 3rem;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner .primary-btn {
+    margin-top: 2rem;
+}
+
+/* Features Section  */
+.features {
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+}
+
+.features-images img {
+    width: 250px;
+    height: auto;
+}
+
+.features-content {
+    padding-left: 3rem;
+}
+
+.features-content .quick-list {
+    color: #727272;
+}
+
+.features-content .feature-txt {
+    color: #FF900E;
+}
+
+.features-content .section-description {
+    margin: 1.5rem 0 2rem;
+}
+
+/* Experience Section  */
+.experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.experience .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 1.3rem;
+}
+
+.experience-right-image img {
+    width: 480px;
+    height: 750px;
+}
+
+.experience-description {
+    padding: 1.3rem 0 1.5rem;
+}
+
+.experience-card h4 {
+    margin-bottom: .7rem;
+}
+
+.experience-card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card .section-description {
+    line-height: 1.3rem;
+}
+
+.img-bottom-box {
+    width: 14rem;
+    height: 8rem;
+    background-color: #FF900E;
+    color: #fff;
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    position: relative;
+    right: 3rem;
+    bottom: 4rem;
+}
+
+.img-bottom-box h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.img-bottom-box h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* Fact Section */
+
+.fact-card-field {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.fact-card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    width: 195px;
+    padding: 1.5rem 0;
+}
+
+.fact .section-description {
+    width: 540px;
+}
+
+.fact-card h1 {
+    font-size: 2.5rem;
+    color: #424242;
+    padding: .7rem 0;
+}
+
+.fact-card p {
+    color: #727272;
+    font-size: 1.2rem;
+}
+
+/* Sponsors Section  */
+.sponsors {
+    text-align: center;
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sponsors .section-description {
+    width: 540px;
+    padding: 1rem 0 3rem;
+    margin: 0 auto;
+}
+
+/* Footer Section  */
+.footer {
+    padding: 1rem .6rem;
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Responsive Design  */
+/* For Mobile  */
+@media screen and (max-width: 576px) {
+    section {
+        margin-bottom: 4rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 1.4rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header {
+        padding: 1.3rem;
+    }
+
+    .nav-title {
+        font-size: 2rem;
+    }
+
+    .banner-title {
+        font-size: 3.2rem;
+    }
+
+    .banner {
+        padding-top: 4rem;
+    }
+
+    .features,
+    .experience,
+    .fact-card-field,
+    .sponsor-logos {
+        flex-direction: column;
+    }
+
+    .features-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-images img {
+        width: 341px;
+    }
+
+    .features-content {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .experience-right-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-bottom-box {
+        width: 11rem;
+        height: 6rem;
+        right: 1rem;
+        bottom: 3.3rem;
+    }
+
+    .img-bottom-box h1 {
+        font-size: 1.7rem;
+    }
+
+    .img-bottom-box h5 {
+        font-size: 1rem;
+    }
+
+    .fact .section-description {
+        width: 100%;
+    }
+
+    .fact-card {
+        width: 80%;
+        margin-bottom: 1.3rem;
+    }
+
+    .sponsor-logos img {
+        margin-bottom: 1.7rem;
+    }
+
+    .sponsors .section-description {
+        width: 100%;
+    }
+}
+
+/* For tab and medium devices  */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    main {
+        width: 90%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .features,
+    .experience {
+        flex-direction: column;
+    }
+
+    .features-content {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .features-images {
+        gap: 1.8rem;
+    }
+
+    .experience-right-image img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .fact-card-field {
+        justify-content: space-between;
+    }
+
+    .sponsor-logos .figma {
+        display: none;
+    }
+}
